@@ -1,6 +1,6 @@
 'use client'
 import React, { useRef } from 'react';
-import { GithubFilled, LinkedinFilled } from '@ant-design/icons';
+import { GithubFilled, LinkedinFilled, MailOutlined } from '@ant-design/icons';
 import Content from './content';
 
 const Sider = () => {
@@ -16,10 +16,10 @@ const Sider = () => {
   };
 
   return (
-    <div className="flex h-screen" onWheel={handleScroll}>
+    <div className="flex h-screen " onWheel={handleScroll}>
       {/* Sidebar */}
       <div className="w-2/6 h-screen fixed left-0 top-0 overflow-y-auto">
-        <div className='flex justify-center h-full items-center gap-6'>
+        <div className='flex justify-end h-full items-center gap-8'>
           <div className="space-y-4">
             <div>
               {/* Adjusting icon size based on screen size */}
@@ -30,6 +30,10 @@ const Sider = () => {
             <div>
               <a href=''>
                 <LinkedinFilled className="lg:text-2xl sm:text-lg text-xl" /> </a>
+            </div>
+            <div>
+              <a href=''>
+                <MailOutlined className="lg:text-2xl sm:text-lg text-xl" /> </a>
             </div>
           </div>
 
@@ -42,7 +46,7 @@ const Sider = () => {
         </div>
       </div>
       <div className="w-4/6 ml-auto p-4 overflow-y-auto" ref={contentRef} style={{ scrollbarWidth: 'none' }}>
-        <div className="h-screen mb-4 p-6 items-center flex flex-col overflow-y-auto">
+        <div className=" fixed h-screen mb-4 p-6 items-center flex flex-col overflow-y-auto">
           <Content />
         </div>
       </div>
