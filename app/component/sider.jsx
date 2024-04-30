@@ -16,9 +16,9 @@ const Sider = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row h-screen" onWheel={handleScroll} style={{ overflow: 'hidden' }}>
+    <div className="flex flex-col lg:flex-row h-screen justify-center items-center" onWheel={handleScroll} style={{ overflow: 'hidden' }}>
       {/* Sidebar and Content Container */}
-      <div className="lg:w-2/6 sm:w-full w-full overflow-y-auto" ref={containerRef} style={{ overflowY: 'auto', scrollbarWidth: 'none', height: '100vh' }}>
+      <div className="lg:w-2/6 sm:w-full w-full overflow-y-auto" ref={containerRef} style={{ overflowY: 'auto', scrollbarWidth: 'none', height: '40vh' }}>
         {/* Sidebar */}
         <div className="flex flex-col h-full justify-center">
           <div className='flex flex-col space-y-4 text-center lg:text-left sm:text-center'>
