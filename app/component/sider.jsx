@@ -18,12 +18,12 @@ const Sider = () => {
   return (
     <div className="flex flex-col lg:flex-row h-screen justify-center items-center" onWheel={handleScroll} style={{ overflow: 'hidden' }}>
       {/* Sidebar and Content Container */}
-      <div className="lg:w-2/6 sm:w-full w-full overflow-y-auto" ref={containerRef} style={{ overflowY: 'auto', scrollbarWidth: 'none', height: '32vh' }}>
+      <div className="lg:w-2/6 sm:w-full w-full overflow-y-auto" ref={containerRef} style={{ overflowY: 'auto', scrollbarWidth: 'none', height: '30vh' }}>
         {/* Sidebar */}
         <div className="flex flex-col h-full justify-center">
           <div className='flex flex-col space-y-4 text-left lg:text-left sm:text-left'>
             {/* Icon and Name/Button */}
-            <div className='flex flex-row lg:flex-row lg:justify-end items-center lg:gap-6 gap-6 sm:gap-6 sm:justify-center justify-center'>
+            <div className='flex flex-row lg:flex-row lg:justify-end items-center lg:gap-6 gap-8 sm:gap-8 sm:justify-center justify-center'>
               {/* Icons */}
               <div className='lg:flex lg:flex-col lg:gap-4 sm:gap-3 gap-3 justify-center sm:justify-center '>
                 {/* Github Icon */}
